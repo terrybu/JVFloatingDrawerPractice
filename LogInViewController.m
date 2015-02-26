@@ -20,11 +20,10 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Home Login View";
-    self.view.backgroundColor = [UIColor orangeColor];
     
     UIImage *drawerButtonImage = [UIImage imageNamed:@"399-list1"];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:drawerButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(actionToggleLeftDrawer:)];
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor blackColor];
 
 }
 

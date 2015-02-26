@@ -34,7 +34,7 @@
     animator.animationDuration = .70;
     animator.animationDelay = 0;
     animator.initialSpringVelocity = 10;
-    animator.springDamping = 0.8;
+    animator.springDamping = 1.8;
     
     self.window.rootViewController = self.drawerViewController;
     [self.window makeKeyAndVisible];

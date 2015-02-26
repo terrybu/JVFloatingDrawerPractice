@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E934F6FBE881F969451C4F1 /* libPods-JVFloatingDrawerPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 472F9702BEAA9F59D311A023 /* libPods-JVFloatingDrawerPractice.a */; };
+		D93182FD1A9F7C440038C405 /* TerryDrawerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D93182FB1A9F7C440038C405 /* TerryDrawerCell.m */; };
+		D93182FE1A9F7C440038C405 /* TerryDrawerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93182FC1A9F7C440038C405 /* TerryDrawerCell.xib */; };
+		D937978D1A9EB51D00814FE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D937978C1A9EB51D00814FE0 /* main.m */; };
+		D93797901A9EB51D00814FE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D937978F1A9EB51D00814FE0 /* AppDelegate.m */; };
+		D93797981A9EB51D00814FE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93797971A9EB51D00814FE0 /* Images.xcassets */; };
+		D937979B1A9EB51D00814FE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797991A9EB51D00814FE0 /* LaunchScreen.xib */; };
+		D93797A71A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797A61A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m */; };
+		D93797B31A9EB69D00814FE0 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797B11A9EB69D00814FE0 /* LogInViewController.m */; };
+		D93797B41A9EB69D00814FE0 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797B21A9EB69D00814FE0 /* LogInViewController.xib */; };
+		D93797BA1A9EB70800814FE0 /* JVLeftDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797B81A9EB70800814FE0 /* JVLeftDrawerTableViewController.m */; };
+		D93797BE1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797BD1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib */; };
+		D93797C21A9EBC5500814FE0 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797C01A9EBC5500814FE0 /* HistoryViewController.m */; };
+		D93797C31A9EBC5500814FE0 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D93797A11A9EB51D00814FE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D937977F1A9EB51C00814FE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93797861A9EB51C00814FE0;
+			remoteInfo = JVFloatingDrawerPractice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		472F9702BEAA9F59D311A023 /* libPods-JVFloatingDrawerPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JVFloatingDrawerPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8EC5CC4E1393F15141E149D /* Pods-JVFloatingDrawerPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVFloatingDrawerPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-JVFloatingDrawerPractice/Pods-JVFloatingDrawerPractice.release.xcconfig"; sourceTree = "<group>"; };
+		D93182FA1A9F7C440038C405 /* TerryDrawerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerryDrawerCell.h; sourceTree = "<group>"; };
+		D93182FB1A9F7C440038C405 /* TerryDrawerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerryDrawerCell.m; sourceTree = "<group>"; };
+		D93182FC1A9F7C440038C405 /* TerryDrawerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerryDrawerCell.xib; sourceTree = "<group>"; };
+		D93797871A9EB51C00814FE0 /* JVFloatingDrawerPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVFloatingDrawerPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D937978B1A9EB51D00814FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D937978C1A9EB51D00814FE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D937978E1A9EB51D00814FE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D937978F1A9EB51D00814FE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D93797971A9EB51D00814FE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D937979A1A9EB51D00814FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D93797A01A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVFloatingDrawerPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93797A51A9EB51D00814FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93797A61A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVFloatingDrawerPracticeTests.m; sourceTree = "<group>"; };
+		D93797B01A9EB69D00814FE0 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = ../LogInViewController.h; sourceTree = "<group>"; };
+		D93797B11A9EB69D00814FE0 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = ../LogInViewController.m; sourceTree = "<group>"; };
+		D93797B21A9EB69D00814FE0 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogInViewController.xib; path = ../LogInViewController.xib; sourceTree = "<group>"; };
+		D93797B71A9EB70800814FE0 /* JVLeftDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVLeftDrawerTableViewController.h; sourceTree = "<group>"; };
+		D93797B81A9EB70800814FE0 /* JVLeftDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVLeftDrawerTableViewController.m; sourceTree = "<group>"; };
+		D93797BD1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVLeftDrawerTableViewController.xib; sourceTree = "<group>"; };
+		D93797BF1A9EBC5400814FE0 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		D93797C01A9EBC5500814FE0 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		DE7A3E1AD87D938A2279A626 /* Pods-JVFloatingDrawerPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVFloatingDrawerPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JVFloatingDrawerPractice/Pods-JVFloatingDrawerPractice.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D93797841A9EB51C00814FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E934F6FBE881F969451C4F1 /* libPods-JVFloatingDrawerPractice.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D937979D1A9EB51D00814FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83849C49652249B04768B323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				472F9702BEAA9F59D311A023 /* libPods-JVFloatingDrawerPractice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D937977E1A9EB51C00814FE0 = {
+			isa = PBXGroup;
+			children = (
+				D93797891A9EB51C00814FE0 /* JVFloatingDrawerPractice */,
+				D93797A31A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests */,
+				D93797881A9EB51C00814FE0 /* Products */,
+				E9528A59328F8F1A281D1649 /* Pods */,
+				83849C49652249B04768B323 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D93797881A9EB51C00814FE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D93797871A9EB51C00814FE0 /* JVFloatingDrawerPractice.app */,
+				D93797A01A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D93797891A9EB51C00814FE0 /* JVFloatingDrawerPractice */ = {
+			isa = PBXGroup;
+			children = (
+				D937978E1A9EB51D00814FE0 /* AppDelegate.h */,
+				D937978F1A9EB51D00814FE0 /* AppDelegate.m */,
+				D93182FA1A9F7C440038C405 /* TerryDrawerCell.h */,
+				D93182FB1A9F7C440038C405 /* TerryDrawerCell.m */,
+				D93182FC1A9F7C440038C405 /* TerryDrawerCell.xib */,
+				D93797B71A9EB70800814FE0 /* JVLeftDrawerTableViewController.h */,
+				D93797B81A9EB70800814FE0 /* JVLeftDrawerTableViewController.m */,
+				D93797BD1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib */,
+				D93797B01A9EB69D00814FE0 /* LogInViewController.h */,
+				D93797B11A9EB69D00814FE0 /* LogInViewController.m */,
+				D93797B21A9EB69D00814FE0 /* LogInViewController.xib */,
+				D93797BF1A9EBC5400814FE0 /* HistoryViewController.h */,
+				D93797C01A9EBC5500814FE0 /* HistoryViewController.m */,
+				D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */,
+				D93797971A9EB51D00814FE0 /* Images.xcassets */,
+				D93797991A9EB51D00814FE0 /* LaunchScreen.xib */,
+				D937978A1A9EB51D00814FE0 /* Supporting Files */,
+			);
+			path = JVFloatingDrawerPractice;
+			sourceTree = "<group>";
+		};
+		D937978A1A9EB51D00814FE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D937978B1A9EB51D00814FE0 /* Info.plist */,
+				D937978C1A9EB51D00814FE0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D93797A31A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D93797A61A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m */,
+				D93797A41A9EB51D00814FE0 /* Supporting Files */,
+			);
+			path = JVFloatingDrawerPracticeTests;
+			sourceTree = "<group>";
+		};
+		D93797A41A9EB51D00814FE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D93797A51A9EB51D00814FE0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9528A59328F8F1A281D1649 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A3E1AD87D938A2279A626 /* Pods-JVFloatingDrawerPractice.debug.xcconfig */,
+				C8EC5CC4E1393F15141E149D /* Pods-JVFloatingDrawerPractice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D93797861A9EB51C00814FE0 /* JVFloatingDrawerPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93797AA1A9EB51D00814FE0 /* Build configuration list for PBXNativeTarget "JVFloatingDrawerPractice" */;
+			buildPhases = (
+				ADA0174003C82248982E27FF /* Check Pods Manifest.lock */,
+				D93797831A9EB51C00814FE0 /* Sources */,
+				D93797841A9EB51C00814FE0 /* Frameworks */,
+				D93797851A9EB51C00814FE0 /* Resources */,
+				463F2D35E103A2FFF9730DC5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JVFloatingDrawerPractice;
+			productName = JVFloatingDrawerPractice;
+			productReference = D93797871A9EB51C00814FE0 /* JVFloatingDrawerPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D937979F1A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D93797AD1A9EB51D00814FE0 /* Build configuration list for PBXNativeTarget "JVFloatingDrawerPracticeTests" */;
+			buildPhases = (
+				D937979C1A9EB51D00814FE0 /* Sources */,
+				D937979D1A9EB51D00814FE0 /* Frameworks */,
+				D937979E1A9EB51D00814FE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D93797A21A9EB51D00814FE0 /* PBXTargetDependency */,
+			);
+			name = JVFloatingDrawerPracticeTests;
+			productName = JVFloatingDrawerPracticeTests;
+			productReference = D93797A01A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D937977F1A9EB51C00814FE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Terry Bu";
+				TargetAttributes = {
+					D93797861A9EB51C00814FE0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D937979F1A9EB51D00814FE0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D93797861A9EB51C00814FE0;
+					};
+				};
+			};
+			buildConfigurationList = D93797821A9EB51C00814FE0 /* Build configuration list for PBXProject "JVFloatingDrawerPractice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D937977E1A9EB51C00814FE0;
+			productRefGroup = D93797881A9EB51C00814FE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D93797861A9EB51C00814FE0 /* JVFloatingDrawerPractice */,
+				D937979F1A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D93797851A9EB51C00814FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D937979B1A9EB51D00814FE0 /* LaunchScreen.xib in Resources */,
+				D93182FE1A9F7C440038C405 /* TerryDrawerCell.xib in Resources */,
+				D93797BE1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib in Resources */,
+				D93797981A9EB51D00814FE0 /* Images.xcassets in Resources */,
+				D93797B41A9EB69D00814FE0 /* LogInViewController.xib in Resources */,
+				D93797C31A9EBC5500814FE0 /* HistoryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D937979E1A9EB51D00814FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		463F2D35E103A2FFF9730DC5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JVFloatingDrawerPractice/Pods-JVFloatingDrawerPractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA0174003C82248982E27FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D93797831A9EB51C00814FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93797901A9EB51D00814FE0 /* AppDelegate.m in Sources */,
+				D937978D1A9EB51D00814FE0 /* main.m in Sources */,
+				D93797BA1A9EB70800814FE0 /* JVLeftDrawerTableViewController.m in Sources */,
+				D93797B31A9EB69D00814FE0 /* LogInViewController.m in Sources */,
+				D93797C21A9EBC5500814FE0 /* HistoryViewController.m in Sources */,
+				D93182FD1A9F7C440038C405 /* TerryDrawerCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D937979C1A9EB51D00814FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93797A71A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D93797A21A9EB51D00814FE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93797861A9EB51C00814FE0 /* JVFloatingDrawerPractice */;
+			targetProxy = D93797A11A9EB51D00814FE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D93797991A9EB51D00814FE0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D937979A1A9EB51D00814FE0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D93797A81A9EB51D00814FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D93797A91A9EB51D00814FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D93797AB1A9EB51D00814FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7A3E1AD87D938A2279A626 /* Pods-JVFloatingDrawerPractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JVFloatingDrawerPractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D93797AC1A9EB51D00814FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EC5CC4E1393F15141E149D /* Pods-JVFloatingDrawerPractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JVFloatingDrawerPractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D93797AE1A9EB51D00814FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JVFloatingDrawerPracticeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JVFloatingDrawerPractice.app/JVFloatingDrawerPractice";
+			};
+			name = Debug;
+		};
+		D93797AF1A9EB51D00814FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JVFloatingDrawerPracticeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JVFloatingDrawerPractice.app/JVFloatingDrawerPractice";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D93797821A9EB51C00814FE0 /* Build configuration list for PBXProject "JVFloatingDrawerPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93797A81A9EB51D00814FE0 /* Debug */,
+				D93797A91A9EB51D00814FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93797AA1A9EB51D00814FE0 /* Build configuration list for PBXNativeTarget "JVFloatingDrawerPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93797AB1A9EB51D00814FE0 /* Debug */,
+				D93797AC1A9EB51D00814FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D93797AD1A9EB51D00814FE0 /* Build configuration list for PBXNativeTarget "JVFloatingDrawerPracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93797AE1A9EB51D00814FE0 /* Debug */,
+				D93797AF1A9EB51D00814FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D937977F1A9EB51C00814FE0 /* Project object */;
+}

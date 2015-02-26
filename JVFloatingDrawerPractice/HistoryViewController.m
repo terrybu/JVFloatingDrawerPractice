@@ -7,6 +7,7 @@
 //
 
 #import "HistoryViewController.h"
+#import "AppDelegate.h"
 
 @interface HistoryViewController ()
 
@@ -17,11 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"History";
+    
+    UIImage *drawerButtonImage = [UIImage imageNamed:@"399-list1"];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:drawerButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(actionToggleLeftDrawer:)];
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor blackColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)actionToggleLeftDrawer:(id)sender {
+    [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
 }
 
 /*

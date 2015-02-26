@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "JVLeftDrawerTableViewController.h"
+#import "TerryDrawerTableViewController.h"
+#import "HistoryViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,24 +22,39 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.drawerViewController = [[JVFloatingDrawerViewController alloc]init];
+    [self setUpStructureForFloatingDrawer];
+    [self setUpSpringAnimator];
     
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:[[LogInViewController alloc]initWithNibName:@"LogInViewController" bundle:nil]];
-    
-    self.drawerViewController.centerViewController = navController;
-    self.drawerViewController.leftViewController = [[JVLeftDrawerTableViewController alloc]initWithNibName:@"JVLeftDrawerTableViewController" bundle:nil];
-    self.drawerViewController.backgroundImage = [UIImage imageNamed:@"hackworld"];
+    self.window.rootViewController = self.drawerViewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
 
+
+#pragma mark - Custom Methods
+
+- (void)setUpStructureForFloatingDrawer {
+    self.drawerViewController = [[JVFloatingDrawerViewController alloc]init];
+
+    UINavigationController *homeViewNavController = [[UINavigationController alloc]initWithRootViewController:[[LogInViewController alloc]initWithNibName:@"LogInViewController" bundle:nil]];
+    UINavigationController *historyViewNavController = [[UINavigationController alloc]initWithRootViewController:[[HistoryViewController alloc]initWithNibName:@"HistoryViewController" bundle:nil]];
+    
+    self.controllersDictionary = [[NSMutableDictionary alloc]init];
+    [self.controllersDictionary setObject:homeViewNavController forKey:@"HomeViewNav"];
+    [self.controllersDictionary setObject:historyViewNavController forKey:@"HistoryViewNav"];
+    
+    self.drawerViewController.centerViewController = homeViewNavController;
+    self.drawerViewController.leftViewController = [[TerryDrawerTableViewController alloc]initWithNibName:@"JVLeftDrawerTableViewController" bundle:nil];
+    self.drawerViewController.backgroundImage = [UIImage imageNamed:@"hackworld"];
+}
+
+- (void)setUpSpringAnimator {
     JVFloatingDrawerSpringAnimator *animator = [[JVFloatingDrawerSpringAnimator alloc] init];
     self.drawerViewController.animator = animator;
     animator.animationDuration = .70;
     animator.animationDelay = 0;
     animator.initialSpringVelocity = 10;
     animator.springDamping = 1.8;
-    
-    self.window.rootViewController = self.drawerViewController;
-    [self.window makeKeyAndVisible];
-    return YES;
 }
 
 #pragma mark - Global Access Helper

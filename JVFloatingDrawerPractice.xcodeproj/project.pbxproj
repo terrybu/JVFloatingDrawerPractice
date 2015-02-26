@@ -17,8 +17,8 @@
 		D93797A71A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797A61A9EB51D00814FE0 /* JVFloatingDrawerPracticeTests.m */; };
 		D93797B31A9EB69D00814FE0 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797B11A9EB69D00814FE0 /* LogInViewController.m */; };
 		D93797B41A9EB69D00814FE0 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797B21A9EB69D00814FE0 /* LogInViewController.xib */; };
-		D93797BA1A9EB70800814FE0 /* JVLeftDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797B81A9EB70800814FE0 /* JVLeftDrawerTableViewController.m */; };
-		D93797BE1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797BD1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib */; };
+		D93797BA1A9EB70800814FE0 /* TerryDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797B81A9EB70800814FE0 /* TerryDrawerTableViewController.m */; };
+		D93797BE1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797BD1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib */; };
 		D93797C21A9EBC5500814FE0 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797C01A9EBC5500814FE0 /* HistoryViewController.m */; };
 		D93797C31A9EBC5500814FE0 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */; };
 /* End PBXBuildFile section */
@@ -52,9 +52,9 @@
 		D93797B01A9EB69D00814FE0 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = ../LogInViewController.h; sourceTree = "<group>"; };
 		D93797B11A9EB69D00814FE0 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = ../LogInViewController.m; sourceTree = "<group>"; };
 		D93797B21A9EB69D00814FE0 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogInViewController.xib; path = ../LogInViewController.xib; sourceTree = "<group>"; };
-		D93797B71A9EB70800814FE0 /* JVLeftDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVLeftDrawerTableViewController.h; sourceTree = "<group>"; };
-		D93797B81A9EB70800814FE0 /* JVLeftDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVLeftDrawerTableViewController.m; sourceTree = "<group>"; };
-		D93797BD1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVLeftDrawerTableViewController.xib; sourceTree = "<group>"; };
+		D93797B71A9EB70800814FE0 /* TerryDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerryDrawerTableViewController.h; sourceTree = "<group>"; };
+		D93797B81A9EB70800814FE0 /* TerryDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerryDrawerTableViewController.m; sourceTree = "<group>"; };
+		D93797BD1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerryDrawerTableViewController.xib; sourceTree = "<group>"; };
 		D93797BF1A9EBC5400814FE0 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		D93797C01A9EBC5500814FE0 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 				D93182FA1A9F7C440038C405 /* TerryDrawerCell.h */,
 				D93182FB1A9F7C440038C405 /* TerryDrawerCell.m */,
 				D93182FC1A9F7C440038C405 /* TerryDrawerCell.xib */,
-				D93797B71A9EB70800814FE0 /* JVLeftDrawerTableViewController.h */,
-				D93797B81A9EB70800814FE0 /* JVLeftDrawerTableViewController.m */,
-				D93797BD1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib */,
+				D93797B71A9EB70800814FE0 /* TerryDrawerTableViewController.h */,
+				D93797B81A9EB70800814FE0 /* TerryDrawerTableViewController.m */,
+				D93797BD1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib */,
 				D93797B01A9EB69D00814FE0 /* LogInViewController.h */,
 				D93797B11A9EB69D00814FE0 /* LogInViewController.m */,
 				D93797B21A9EB69D00814FE0 /* LogInViewController.xib */,
@@ -251,7 +251,7 @@
 			files = (
 				D937979B1A9EB51D00814FE0 /* LaunchScreen.xib in Resources */,
 				D93182FE1A9F7C440038C405 /* TerryDrawerCell.xib in Resources */,
-				D93797BE1A9EB76B00814FE0 /* JVLeftDrawerTableViewController.xib in Resources */,
+				D93797BE1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib in Resources */,
 				D93797981A9EB51D00814FE0 /* Images.xcassets in Resources */,
 				D93797B41A9EB69D00814FE0 /* LogInViewController.xib in Resources */,
 				D93797C31A9EBC5500814FE0 /* HistoryViewController.xib in Resources */,
@@ -307,7 +307,7 @@
 			files = (
 				D93797901A9EB51D00814FE0 /* AppDelegate.m in Sources */,
 				D937978D1A9EB51D00814FE0 /* main.m in Sources */,
-				D93797BA1A9EB70800814FE0 /* JVLeftDrawerTableViewController.m in Sources */,
+				D93797BA1A9EB70800814FE0 /* TerryDrawerTableViewController.m in Sources */,
 				D93797B31A9EB69D00814FE0 /* LogInViewController.m in Sources */,
 				D93797C21A9EBC5500814FE0 /* HistoryViewController.m in Sources */,
 				D93182FD1A9F7C440038C405 /* TerryDrawerCell.m in Sources */,

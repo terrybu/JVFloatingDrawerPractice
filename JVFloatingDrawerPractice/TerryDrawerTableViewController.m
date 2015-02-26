@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 JVillella. All rights reserved.
 //
 
-#import "JVLeftDrawerTableViewController.h"
+#import "TerryDrawerTableViewController.h"
 #import "TerryDrawerCell.h"
 #import "AppDelegate.h"
 #import "JVFloatingDrawerViewController.h"
 #import "HistoryViewController.h"
 
+//old c wya of doing enum, we can improve with typedef in ios
 //enum {
 //    kHistoryOfRecordsIndex    = 0,
 //    kLogOutIndex = 1
 //};
-//old c wya of doing enum, we can improve with typedef in ios
 
 typedef NS_ENUM(NSInteger, CellIndexType) {
     CellIndexTypeHome,
@@ -27,11 +27,11 @@ typedef NS_ENUM(NSInteger, CellIndexType) {
 static const CGFloat kJVTableViewTopInset = 80.0;
 static NSString * const kCellReuseIdentifier = @"TerryDrawerCell";
 
-@interface JVLeftDrawerTableViewController ()
+@interface TerryDrawerTableViewController ()
 
 @end
 
-@implementation JVLeftDrawerTableViewController
+@implementation TerryDrawerTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -83,22 +83,27 @@ static NSString * const kCellReuseIdentifier = @"TerryDrawerCell";
         }
         default:
             break;
-        }
+    }
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *destinationViewController = nil;
-
-    if(indexPath.row == CellIndexTypeHistory) {
-        destinationViewController = [[HistoryViewController alloc]initWithNibName:@"HistoryViewController" bundle:nil];
-    } else {
-        NSLog(@"log out");
-    }
+    UINavigationController *destinationNavController = nil;
     
-    [[[AppDelegate globalDelegate] drawerViewController] setCenterViewController:destinationViewController];
-    [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
+    if(indexPath.row == CellIndexTypeHome) {
+        destinationNavController = [[AppDelegate globalDelegate].controllersDictionary objectForKey:@"HomeViewNav"];
+        [[[AppDelegate globalDelegate] drawerViewController] setCenterViewController:destinationNavController];
+        [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
+    }
+    else if (indexPath.row == CellIndexTypeHistory) {
+        destinationNavController = [[AppDelegate globalDelegate].controllersDictionary objectForKey:@"HistoryViewNav"];
+        [[[AppDelegate globalDelegate] drawerViewController] setCenterViewController:destinationNavController];
+        [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
+    }
+    else if (indexPath.row == CellIndexTypeLogout)
+        NSLog(@"log out!");
+    
 }
 
 - (void)didReceiveMemoryWarning {

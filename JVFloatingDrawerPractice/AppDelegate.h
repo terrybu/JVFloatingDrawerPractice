@@ -15,6 +15,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) JVFloatingDrawerViewController *drawerViewController;
+@property (nonatomic, strong) NSMutableDictionary *controllersDictionary;
 
 + (AppDelegate *)globalDelegate;
 - (void)toggleLeftDrawer:(id)sender animated:(BOOL)animated;

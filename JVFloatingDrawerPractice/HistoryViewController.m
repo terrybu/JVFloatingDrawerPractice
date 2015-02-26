@@ -21,7 +21,7 @@
     
     self.title = @"History";
     
-    UIImage *drawerButtonImage = [UIImage imageNamed:@"399-list1"];
+    UIImage *drawerButtonImage = [UIImage imageNamed:kIconDrawer];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:drawerButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(actionToggleLeftDrawer:)];
     self.navigationItem.leftBarButtonItem.tintColor = [UIColor blackColor];
 }

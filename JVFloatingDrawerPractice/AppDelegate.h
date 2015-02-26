@@ -10,6 +10,7 @@
 #import "LogInViewController.h"
 #import "JVFloatingDrawerViewController.h"
 #import "JVFloatingDrawerSpringAnimator.h"
+#import "Constants.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

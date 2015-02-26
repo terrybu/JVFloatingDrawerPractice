@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "JVFloatingDrawerViewController.h"
 #import "HistoryViewController.h"
+#import "Constants.h"
 
 //old c wya of doing enum, we can improve with typedef in ios
 //enum {
@@ -25,7 +26,6 @@ typedef NS_ENUM(NSInteger, CellIndexType) {
 };
 
 static const CGFloat kJVTableViewTopInset = 80.0;
-static NSString * const kCellReuseIdentifier = @"TerryDrawerCell";
 
 @interface TerryDrawerTableViewController ()
 
@@ -68,17 +68,17 @@ static NSString * const kCellReuseIdentifier = @"TerryDrawerCell";
     switch (indexPath.row) {
         case CellIndexTypeHome: {
             cell.titleLabel.text = @"Home";
-            cell.iconImageView.image = [[UIImage imageNamed:@"665-gear"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            cell.iconImageView.image = [[UIImage imageNamed:@"IconHome"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
             break;
         }
         case CellIndexTypeHistory: {
             cell.titleLabel.text = @"History";
-            cell.iconImageView.image = [[UIImage imageNamed:@"665-gear"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            cell.iconImageView.image = [[UIImage imageNamed:@"IconCalendar"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
             break;
         }
         case CellIndexTypeLogout: {
             cell.titleLabel.text = @"Log Out";
-            cell.iconImageView.image = [[UIImage imageNamed:@"665-gear"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            cell.iconImageView.image = [[UIImage imageNamed:@"IconSettings"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
             break;
         }
         default:
@@ -94,15 +94,17 @@ static NSString * const kCellReuseIdentifier = @"TerryDrawerCell";
     if(indexPath.row == CellIndexTypeHome) {
         destinationNavController = [[AppDelegate globalDelegate].controllersDictionary objectForKey:@"HomeViewNav"];
         [[[AppDelegate globalDelegate] drawerViewController] setCenterViewController:destinationNavController];
-        [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
     }
     else if (indexPath.row == CellIndexTypeHistory) {
         destinationNavController = [[AppDelegate globalDelegate].controllersDictionary objectForKey:@"HistoryViewNav"];
         [[[AppDelegate globalDelegate] drawerViewController] setCenterViewController:destinationNavController];
-        [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
     }
-    else if (indexPath.row == CellIndexTypeLogout)
+    else if (indexPath.row == CellIndexTypeLogout) {
         NSLog(@"log out!");
+    }
+    
+    [[AppDelegate globalDelegate] toggleLeftDrawer:self animated:YES];
+
     
 }
 

@@ -21,6 +21,7 @@
 		D93797BE1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797BD1A9EB76B00814FE0 /* TerryDrawerTableViewController.xib */; };
 		D93797C21A9EBC5500814FE0 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93797C01A9EBC5500814FE0 /* HistoryViewController.m */; };
 		D93797C31A9EBC5500814FE0 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */; };
+		D9CA83A51A9F94B6009B6424 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CA83A41A9F94B6009B6424 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		D93797BF1A9EBC5400814FE0 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		D93797C01A9EBC5500814FE0 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		D93797C11A9EBC5500814FE0 /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		D9CA83A31A9F94B6009B6424 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D9CA83A41A9F94B6009B6424 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		DE7A3E1AD87D938A2279A626 /* Pods-JVFloatingDrawerPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVFloatingDrawerPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JVFloatingDrawerPractice/Pods-JVFloatingDrawerPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +116,8 @@
 			children = (
 				D937978E1A9EB51D00814FE0 /* AppDelegate.h */,
 				D937978F1A9EB51D00814FE0 /* AppDelegate.m */,
+				D9CA83A31A9F94B6009B6424 /* Constants.h */,
+				D9CA83A41A9F94B6009B6424 /* Constants.m */,
 				D93182FA1A9F7C440038C405 /* TerryDrawerCell.h */,
 				D93182FB1A9F7C440038C405 /* TerryDrawerCell.m */,
 				D93182FC1A9F7C440038C405 /* TerryDrawerCell.xib */,
@@ -310,6 +315,7 @@
 				D93797BA1A9EB70800814FE0 /* TerryDrawerTableViewController.m in Sources */,
 				D93797B31A9EB69D00814FE0 /* LogInViewController.m in Sources */,
 				D93797C21A9EBC5500814FE0 /* HistoryViewController.m in Sources */,
+				D9CA83A51A9F94B6009B6424 /* Constants.m in Sources */,
 				D93182FD1A9F7C440038C405 /* TerryDrawerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
